@@ -14,7 +14,7 @@ import {
   }
   
   export async function fetchData() {
-    let sbParams = { version: "draft" };
+    let sbParams = { version: "published" };
   
     const storyblokApi = getStoryblokApi();
     return await storyblokApi.get(`cdn/stories/home`, sbParams);
